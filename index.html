@@ -9,36 +9,31 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
-
 <body>
-    <div class="jumbotron">
-    	<div class="container">
-        	<h1>
-        		<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-        		Gif-Tastic!
-        	</h1>
-      		<p>You've hit the motherlode of cartoon gifs!</p>
+    <!-- buttons -->
+    <div class="col-md-12">
+        <div id="topics">
+            <!-- dynamically create buttons from array in js, insert here -->
         </div>
     </div>
-    <div class="container">
-        <!-- Rendered buttons will get dumped Here  -->
-        <div class="row" id="gif-view">
-            <div class="col-md-8" id="buttons-view">
 
-            </div>
-            <div class="col-md-4">
-                <form id="toon-form">
-                    <label for="toon-input">Add a Toon!</label>
-                    <input type="text" id="toon-input">
-                    <br>
-                    <!-- Button triggers new gif to be added -->
-                    <input id="add-toon" type="submit" value="Add a Toon">
-                </form>
-            </div>
+    <!-- gifs -->
+    <div class="col-md-12">
+        <div id="gifs" class="col-md-8">
+            <!-- dummy -->
+            <img src="" class="gif">
+            <!-- dynamically create gifs here when buttons are pressed -->
         </div>
-    </div>
-    <!-- Gifs will get dumped dere -->
-    <div id="toon-view"></div>
+
+    <!-- input -->
+        <div id="userInput" class="col-md-4">
+            Add A Toon! <br>
+            <!-- text box to type in new button -->
+            <input type="text" name="New Buttons" id="textbox">
+            <!-- add new button to list -->
+            <button type="submit" id="newButton">Add New Button</button>
+        </div>
+
     <!-- JavaScript and jQuery API -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
